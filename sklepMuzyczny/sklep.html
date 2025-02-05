@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sklep muzyczny</title>
+    <link rel="stylesheet" href="muzyka.css">
+</head>
+<body>
+    <section id="baner">
+        <h1>SKLEP MUZYCZNY</h1>
+    </section>
+    <section id="panelLewy">
+        <h2>NASZA OFERTA</h2>
+        <ol>
+            <li>
+                Instrumenty muzyczne
+            </li>
+            <li>
+                Sprzęt audio
+            </li>
+            <li>
+                Płyty CD
+            </li>
+        </ol>
+    </section>
+    <section id="panelPrawy">
+        <h2>FORMULARZ REJESTRACYJNY</h2>
+        <form action="formularz.php" method="post">
+            <p><strong>Dane osobowe</strong></p>
+            <label for="imie">Imię:</label>
+            <br>
+            <input type="text" id="imie" name="imie">
+            <br>
+
+            <label for="nazwisko">Nazwisko:</label>
+            <br>
+            <input type="text" id="nazwisko" name="nazwisko">
+            <br>
+
+            <label for="adres">Adres:</label>
+            <br>
+            <input type="text" id="adres" name="adres">
+            <br>
+
+            <label for="telefon">Telefon:</label>
+            <br>
+            <input type="text" id="telefon" name="telefon">
+
+            <hr>
+
+            <p><strong>Dane logowania</strong></p>
+            
+            <label for="login">Login:</label>
+            <br>
+            <input type="text" id="login" name="login">
+            <br>
+            <label for="haslo">Hasło:</label>
+            <br>
+            <input type="password" id="haslo" name="haslo">
+            <br>
+            <input type="checkbox" name="cbRegulamin" id="cbRegulamin" required >
+            <label for="cbRegulamin">Akceptuję <a href="regulamin.txt" target="_blank">regulamin</a> sklepu</label>
+            <br>
+            <input type="reset" value="WYCZYŚĆ">
+            <input type="submit" value="REJESTRUJ">
+        </form>
+    </section>
+</body>
+</html>
